@@ -1,0 +1,120 @@
+/*
+Theme Name: AuraCure Medical
+Theme URI: https://devnahian.com/auracure
+Author: DevNahian
+Author URI: https://devnahian.com
+Description: A modern, high-conversion, professional medical and hospital WordPress theme featuring precision care architecture, modal-free workflows, and responsive clinical directory templates.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+Text Domain: devnahian-auracure
+*/
+
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   ========================================================================== */
+:root {
+  --devnahian-auracare-primary: #0284c7;
+  --devnahian-auracare-primary-hover: #0369a1;
+  --devnahian-auracare-primary-soft: #e0f2fe;
+  --devnahian-auracare-primary-glass: rgba(2, 132, 199, 0.1);
+  --devnahian-auracare-secondary: #0d9488;
+  --devnahian-auracare-secondary-soft: #ccfbf1;
+  --devnahian-auracare-accent: #f59e0b;
+  --devnahian-auracare-success: #10b981;
+  --devnahian-auracare-slate-900: #0f172a;
+  --devnahian-auracare-slate-800: #1e293b;
+  --devnahian-auracare-slate-700: #334155;
+  --devnahian-auracare-slate-600: #475569;
+  --devnahian-auracare-slate-500: #64748b;
+  --devnahian-auracare-slate-400: #94a3b8;
+  --devnahian-auracare-slate-300: #cbd5e1;
+  --devnahian-auracare-slate-200: #e2e8f0;
+  --devnahian-auracare-slate-100: #f1f5f9;
+  --devnahian-auracare-slate-50: #f8fafc;
+  --devnahian-auracare-font-heading: 'Plus Jakarta Sans', sans-serif;
+  --devnahian-auracare-font-body: 'Inter', sans-serif;
+  --devnahian-auracare-radius-sm: 6px;
+  --devnahian-auracare-radius-md: 10px;
+  --devnahian-auracare-radius-lg: 16px;
+  --devnahian-auracare-radius-xl: 24px;
+  --devnahian-auracare-radius-full: 9999px;
+  --devnahian-auracare-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --devnahian-auracare-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --devnahian-auracare-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --devnahian-auracare-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --devnahian-auracare-transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--devnahian-auracare-font-body);
+  color: var(--devnahian-auracare-slate-600);
+  background-color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--devnahian-auracare-font-heading);
+  color: var(--devnahian-auracare-slate-900);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   LAYOUT CONTAINERS & UTILITIES
+   ========================================================================== */
+.devnahian-auracare-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.devnahian-auracare-section-padding {
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .devnahian-auracare-section-padding {
+    padding: 7rem 0;
+  }
+}
+
+.devnahian-auracare-bg-light {
+  background-color: var(--devnahian-auracare-slate-50);
+}
+
+.devnahian-auracare-no-scroll {
+  overflow: hidden;
+}
